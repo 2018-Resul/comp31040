@@ -4,17 +4,42 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Warning: No tests created yet.\" "
-    },
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
+    "test": "echo \"Warning: No tests created yet.\"",
+    "eject": "react-scripts eject"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/2018-Resul/comp31040.git"
+    "url": "git+https://github.com/2018-Resul/Comp3104.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/2018-Resul/comp31040/issues"
+    "url": "https://github.com/2018-Resul/Comp3104/issues"
   },
-  "homepage": "https://github.com/2018-Resul/comp31040#readme"
+  "homepage": "https://github.com/2018-Resul/Comp3104#readme",
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-scripts": "^4.0.3",
+    "travis": "^0.1.1",
+    "yarn": "^1.13.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
